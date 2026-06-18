@@ -25,28 +25,38 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [X] Describe the game's purpose.
+- [X] Detail which bugs you found.
+- [X] Explain what fixes you applied.
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User enters a guess of 32
+2. Game returns a hint "Go LOWER!"
+3. The user's score updates
+4. User enters a guess of 12
+5. Game returns a hint "Go HIGHER!"
+6. The user's score updates after each subsequent incorrect guess
+7. The game ends after the correct guess
 
-**Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
+**Screenshot** 
+![Fixed Game Screenshot](images/winningGame.png)
+
 
 ## 🧪 Test Results
 
 ```
-# Paste your pytest output here, e.g.:
-# pytest tests/
-# ========================= X passed in 0.XXs =========================
+======================================================== test session starts =========================================================
+platform darwin -- Python 3.13.14, pytest-9.0.3, pluggy-1.6.0
+rootdir: /Users/meghan/vscode/ai110-module1-gameglitchinvestigator
+plugins: anyio-4.13.0
+collected 4 items                                                                                                                    
+
+tests/test_game_logic.py ....                                                                                                  [100%]
+
+========================================================= 4 passed in 0.03s ==========================================================
 ```
 
 ## 🚀 Stretch Features
